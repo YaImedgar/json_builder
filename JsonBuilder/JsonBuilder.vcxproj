@@ -141,7 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="json.cpp" />
-    <ClCompile Include="JsonBuilder.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="json_builder.cpp" />
   </ItemGroup>
   <ItemGroup>
