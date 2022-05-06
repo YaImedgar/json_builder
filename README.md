@@ -2,6 +2,9 @@
 This is a json C++ builder implementation. Which helps with the construction of a json document
 
 ## Example
+
+C++ source code usage
+
 ```c++
  json::Builder{}
     .StartDict()
@@ -19,11 +22,14 @@ This is a json C++ builder implementation. Which helps with the construction of 
     .EndDict()
     .Build()
 ```
-
+Generate to json format 👇
 ```json
 {
     "key1": 123,
     "key2": "value2",
-    "key3": [ 456, {}, { "" : null }, "" ]
+    "key3": [ 456,
+              {},
+              { "" : null },
+              "" ]
 }
 ```
