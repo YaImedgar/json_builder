@@ -2,6 +2,11 @@
 
 #include "json.h"
 
+#include <stack>
+#include <set>
+#include <vector>
+#include <map>
+
 namespace json
 {
     class Builder
@@ -29,7 +34,10 @@ namespace json
         json::Node Build();
 
     private:
-        json::Node main_node_;
+        std::string key_ = "";
+
+        std::vector<Node*> nodes_stack_;
+        Node root_ = nullptr;
     };
 }
 

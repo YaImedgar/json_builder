@@ -22,8 +22,10 @@ namespace json
         : private std::variant<std::nullptr_t, Array, Dict, bool, int, double, std::string>
     {
     public:
+        friend class Builder;
         using variant::variant;
         using Value = variant;
+
 
         bool IsInt() const
         {
@@ -128,6 +130,11 @@ namespace json
         }
 
         const Value& GetValue() const
+        {
+            return *this;
+        }
+    private:
+        Value& GetValue()
         {
             return *this;
         }

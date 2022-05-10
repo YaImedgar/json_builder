@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    /*json::Print(
+    json::Print(
         json::Document{
             json::Builder{}
             .StartDict()
@@ -25,7 +25,7 @@ int main()
         },
         cout
     );
-    cout << endl;*/
+    cout << endl;
 
     json::Print(
         json::Document{
